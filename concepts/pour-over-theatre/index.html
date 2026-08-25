@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pour-Over Theatre | Coffee Nutz Concept</title>
+    <meta name="description" content="An interactive, craft-led Coffee Nutz homepage concept.">
+    <meta name="theme-color" content="#171310">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/concepts.css">
+    <link rel="stylesheet" href="/assets/universal.css">
+    <script src="/assets/concepts.js" defer></script>
+  </head>
+  <body class="concept-page theatre-page">
+    <a class="concept-skip-link" href="#main">Skip to content</a>
+    <a class="floating-order" href="https://order.toasttab.com/online/coffee-nutz-nro-1-6951-south-custer-road-ste500" target="_blank" rel="noopener">Order online</a>
+    <aside class="review-bar" aria-label="Concept review controls">
+      <a class="review-bar__back" href="/choose.html">← All concepts</a>
+      <label class="review-bar__switcher">Switch design
+        <select data-concept-select aria-label="Switch homepage design">
+          <option value="/">00 — Current homepage</option>
+          <option value="/concepts/pour-over-theatre/" selected>01 — Pour-Over Theatre</option>
+          <option value="/concepts/family-table/">02 — The Family Table</option>
+          <option value="/concepts/specialty-playground/">03 — Specialty Playground</option>
+          <option value="/concepts/coffee-journal/">04 — The Coffee Journal</option>
+          <option value="/concepts/neighborhood-destination/">05 — Neighborhood Destination</option>
+        </select>
+      </label>
+      <nav class="review-bar__pages" aria-label="Previous and next concept">
+        <a href="/">← Current</a>
+        <a href="/concepts/family-table/">Next →</a>
+      </nav>
+    </aside>
+
+    <header class="concept-site-header">
+      <a class="concept-logo" href="#main" aria-label="Coffee Nutz concept home"><img src="/assets/images/coffee-nutz-logo.png" alt="Coffee Nutz"></a>
+      <button class="concept-nav-toggle" type="button" aria-controls="theatre-nav" aria-expanded="false" data-concept-nav-toggle>Menu</button>
+      <nav class="concept-nav" id="theatre-nav" data-concept-nav data-open="false" aria-label="Concept navigation">
+        <a href="#craft">The craft</a>
+        <a href="#featured">Featured drinks</a>
+        <a href="/menu/">Full menu</a>
+        <a href="https://order.toasttab.com/online/coffee-nutz-nro-1-6951-south-custer-road-ste500" target="_blank" rel="noopener">Order online</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="theatre-hero" aria-labelledby="theatre-title">
+        <div class="theatre-hero__copy">
+          <p class="concept-kicker">McKinney’s specialty coffee ritual</p>
+          <h1 id="theatre-title">Pour-over. <em>Perfected.</em></h1>
+          <p>Each cup is measured, bloomed, and poured by hand—bringing every bright, balanced note of our specialty beans to life.</p>
+          <div class="theatre-hero__actions">
+            <a class="concept-button" href="/menu/">Explore the menu</a>
+            <a class="concept-button concept-button--outline" href="#craft">See how we brew</a>
+          </div>
+        </div>
+        <div class="theatre-hero__image">
+          <img src="/assets/images/coffee-bar.webp" alt="Coffee beans and brewing equipment at the Coffee Nutz bar">
+          <p class="theatre-hero__note">Small-batch beans • Ground to order • Brewed for clarity</p>
+        </div>
+      </section>
+
+      <section class="theatre-process" id="craft" aria-labelledby="craft-title">
+        <div class="theatre-process__heading">
+          <h2 id="craft-title">A better cup takes intention.</h2>
+          <p>Pour-over turns coffee into a quiet performance. By controlling the grind, temperature, and flow of water, we reveal flavors that disappear in an ordinary brew.</p>
+        </div>
+        <div class="theatre-steps">
+          <article class="theatre-step">
+            <span class="theatre-step__number">01</span>
+            <h3>Select</h3>
+            <p>Choose a specialty bean with a flavor profile made for your morning.</p>
+          </article>
+          <article class="theatre-step">
+            <span class="theatre-step__number">02</span>
+            <h3>Bloom</h3>
+            <p>A careful first pour releases trapped gases and prepares the grounds.</p>
+          </article>
+          <article class="theatre-step">
+            <span class="theatre-step__number">03</span>
+            <h3>Pour</h3>
+            <p>Slow, precise circles build a clean cup with remarkable sweetness and clarity.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="theatre-carousel" id="featured" data-carousel aria-labelledby="featured-title">
+        <div class="theatre-carousel__copy">
+          <div>
+            <p class="concept-kicker">Beyond the pour-over</p>
+            <h2 id="featured-title">Craft in every glass.</h2>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" data-carousel-prev aria-label="Previous featured drink">←</button>
+            <span data-carousel-status aria-live="polite">1 / 3</span>
+            <button type="button" data-carousel-next aria-label="Next featured drink">→</button>
+          </div>
+        </div>
+        <div>
+          <figure class="theatre-slide" data-slide>
+            <img src="/assets/images/golden-brown.webp" alt="Golden brown hot coffee in a white cup">
+            <figcaption>Golden Brown</figcaption>
+          </figure>
+          <figure class="theatre-slide" data-slide hidden>
+            <img src="/assets/images/iced-latte.webp" alt="Layered iced coffee specialty drink">
+            <figcaption>Espresso Citrus Tonic</figcaption>
+          </figure>
+          <figure class="theatre-slide" data-slide hidden>
+            <img src="/assets/images/biscoff-latte.webp" alt="Iced Biscoff latte topped with cookie pieces">
+            <figcaption>Biscoff Latte</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <section class="universal-location" aria-labelledby="location-title">
+      <div class="universal-location__copy">
+        <p class="universal-location__eyebrow">Find Coffee Nutz</p>
+        <h2 id="location-title">Your next cup is nearby.</h2>
+        <div><p class="universal-location__address">6951 South Custer Road, Suite 500<br>McKinney, Texas</p><a class="universal-location__link" href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Nutz+6951+South+Custer+Road+McKinney+TX" target="_blank" rel="noopener">Open in Google Maps →</a></div>
+      </div>
+      <div class="universal-map"><iframe title="Google Map showing the Coffee Nutz location in McKinney" src="https://www.google.com/maps?q=Coffee%20Nutz%2C%206951%20S%20Custer%20Rd%20Ste%20500%2C%20McKinney%2C%20TX&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <footer class="universal-footer">
+      <div class="universal-footer__brand"><img src="/assets/images/coffee-nutz-logo.png" alt="Coffee Nutz"><p>Specialty coffee, fresh breakfast, and a warm neighborhood welcome in McKinney.</p></div>
+      <div class="universal-footer__visit"><h2>Visit</h2><p class="universal-footer__location">6951 S. Custer Rd, Suite 500<br>McKinney, Texas</p></div>
+      <nav aria-label="Footer navigation"><h2>Explore</h2><ul><li><a href="/menu/">Menu</a></li><li><a href="/why-coffee-nutz/">Why Coffee Nutz</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/choose.html">Homepage concepts</a></li></ul></nav>
+      <div><h2>Connect</h2><ul><li><a href="https://www.instagram.com/coffeenutz_dtx" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/956262774241507" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://order.toasttab.com/online/coffee-nutz-nro-1-6951-south-custer-road-ste500" target="_blank" rel="noopener">Order online</a></li></ul></div>
+      <div class="universal-footer__legal"><span>© 2026 Coffee Nutz. All rights reserved.</span><span>Brewed bold. Crafted fresh.</span></div>
+    </footer>
+  </body>
+</html>

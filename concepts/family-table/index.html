@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Family Table | Coffee Nutz Concept</title>
+    <meta name="description" content="An interactive, story-led Coffee Nutz homepage concept.">
+    <meta name="theme-color" content="#f8eddb">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/concepts.css">
+    <link rel="stylesheet" href="/assets/universal.css">
+    <script src="/assets/concepts.js" defer></script>
+  </head>
+  <body class="concept-page family-page">
+    <a class="concept-skip-link" href="#main">Skip to content</a>
+    <a class="floating-order" href="https://order.toasttab.com/online/coffee-nutz-nro-1-6951-south-custer-road-ste500" target="_blank" rel="noopener">Order online</a>
+    <aside class="review-bar" aria-label="Concept review controls">
+      <a class="review-bar__back" href="/choose.html">← All concepts</a>
+      <label class="review-bar__switcher">Switch design
+        <select data-concept-select aria-label="Switch homepage design">
+          <option value="/">00 — Current homepage</option>
+          <option value="/concepts/pour-over-theatre/">01 — Pour-Over Theatre</option>
+          <option value="/concepts/family-table/" selected>02 — The Family Table</option>
+          <option value="/concepts/specialty-playground/">03 — Specialty Playground</option>
+          <option value="/concepts/coffee-journal/">04 — The Coffee Journal</option>
+          <option value="/concepts/neighborhood-destination/">05 — Neighborhood Destination</option>
+        </select>
+      </label>
+      <nav class="review-bar__pages" aria-label="Previous and next concept">
+        <a href="/concepts/pour-over-theatre/">← Previous</a>
+        <a href="/concepts/specialty-playground/">Next →</a>
+      </nav>
+    </aside>
+
+    <header class="concept-site-header">
+      <a class="concept-logo" href="#main" aria-label="Coffee Nutz concept home"><img src="/assets/images/coffee-nutz-logo.png" alt="Coffee Nutz"></a>
+      <button class="concept-nav-toggle" type="button" aria-controls="family-nav" aria-expanded="false" data-concept-nav-toggle>Menu</button>
+      <nav class="concept-nav" id="family-nav" data-concept-nav data-open="false" aria-label="Concept navigation">
+        <a href="#story">Our story</a>
+        <a href="#favorites">Family favorites</a>
+        <a href="/menu/">Menu</a>
+        <a href="https://order.toasttab.com/online/coffee-nutz-nro-1-6951-south-custer-road-ste500" target="_blank" rel="noopener">Order online</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="family-hero" aria-labelledby="family-title">
+        <div class="family-hero__copy">
+          <p class="concept-kicker">Made in McKinney, shared with everyone</p>
+          <h1 id="family-title">Coffee made with care.</h1>
+          <p>Come as you are. Stay as long as you like. We’re a family-owned café built around thoughtful coffee, satisfying food, and the joy of seeing familiar faces.</p>
+          <div class="family-hero__actions">
+            <a class="concept-button" href="/menu/">See what’s cooking</a>
+            <a class="concept-button concept-button--outline" href="#story">Meet Coffee Nutz</a>
+          </div>
+        </div>
+        <div class="family-hero__photo">
+          <img src="/assets/images/cafe-seating.webp" alt="Warm and welcoming seating inside Coffee Nutz">
+          <span class="family-seal">Family owned • McKinney loved</span>
+        </div>
+      </section>
+
+      <section class="family-story" id="story" aria-labelledby="story-title">
+        <div class="family-story__photos">
+          <img src="/assets/images/cafe-counter.webp" alt="The welcoming Coffee Nutz café counter">
+          <img src="/assets/images/coffee-bar.webp" alt="Coffee beans and equipment behind the bar">
+        </div>
+        <div class="family-story__copy">
+          <p class="concept-kicker">Our table has room for you</p>
+          <h2 id="story-title">More than a stop for coffee.</h2>
+          <p>Coffee Nutz began with a simple idea: make excellent drinks feel personal. Our menu blends serious coffee craft with the food and flavors we love to share. The result is a neighborhood place where a quick breakfast can turn into your favorite weekly ritual.</p>
+          <div class="family-values" aria-label="Coffee Nutz values">
+            <div class="family-value"><strong>Made fresh</strong><span>Food worth sitting down for</span></div>
+            <div class="family-value"><strong>Brewed well</strong><span>Specialty beans and careful technique</span></div>
+            <div class="family-value"><strong>Served warmly</strong><span>Hospitality that remembers you</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="family-favorites" id="favorites" data-carousel aria-labelledby="family-favorites-title">
+        <div class="family-favorites__heading">
+          <div>
+            <p class="concept-kicker">From our table to yours</p>
+            <h2 id="family-favorites-title">Family favorites.</h2>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" data-carousel-prev aria-label="Previous family favorite">←</button>
+            <span data-carousel-status aria-live="polite">1 / 3</span>
+            <button type="button" data-carousel-next aria-label="Next family favorite">→</button>
+          </div>
+        </div>
+        <article class="family-favorite" data-slide>
+          <img src="/assets/images/breakfast-plate.webp" alt="Breakfast plate with eggs, bacon, toast, and potatoes">
+          <div class="family-favorite__copy"><p class="concept-kicker">Breakfast, the classic way</p><h3>The full morning plate</h3><p>Hot eggs, crisp bacon, breakfast potatoes, and toast—the kind of breakfast that makes everyone slow down.</p></div>
+        </article>
+        <article class="family-favorite" data-slide hidden>
+          <img src="/assets/images/crab-sandwich-wide.webp" alt="Stacked crab breakfast sandwich">
+          <div class="family-favorite__copy"><p class="concept-kicker">A Coffee Nutz original</p><h3>Crab breakfast sandwich</h3><p>A generous, savory sandwich that turns an ordinary morning into something worth talking about.</p></div>
+        </article>
+        <article class="family-favorite" data-slide hidden>
+          <img src="/assets/images/biscoff-latte.webp" alt="Biscoff latte topped with cookie pieces">
+          <div class="family-favorite__copy"><p class="concept-kicker">Sweet, creamy, unforgettable</p><h3>Biscoff latte</h3><p>Rich espresso, creamy sweetness, and the warm spice of Biscoff in every sip.</p></div>
+        </article>
+      </section>
+    </main>
+
+    <section class="universal-location" aria-labelledby="location-title">
+      <div class="universal-location__copy">
+        <p class="universal-location__eyebrow">Find Coffee Nutz</p>
+        <h2 id="location-title">Your next cup is nearby.</h2>
+        <div><p class="universal-location__address">6951 South Custer Road, Suite 500<br>McKinney, Texas</p><a class="universal-location__link" href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Nutz+6951+South+Custer+Road+McKinney+TX" target="_blank" rel="noopener">Open in Google Maps →</a></div>
+      </div>
+      <div class="universal-map"><iframe title="Google Map showing the Coffee Nutz location in McKinney" src="https://www.google.com/maps?q=Coffee%20Nutz%2C%206951%20S%20Custer%20Rd%20Ste%20500%2C%20McKinney%2C%20TX&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <footer class="universal-footer">
+      <div class="universal-footer__brand"><img src="/assets/images/coffee-nutz-logo.png" alt="Coffee Nutz"><p>Specialty coffee, fresh breakfast, and a warm neighborhood welcome in McKinney.</p></div>
+      <div class="universal-footer__visit"><h2>Visit</h2><p class="universal-footer__location">6951 S. Custer Rd, Suite 500<br>McKinney, Texas</p></div>
+      <nav aria-label="Footer navigation"><h2>Explore</h2><ul><li><a href="/menu/">Menu</a></li><li><a href="/why-coffee-nutz/">Why Coffee Nutz</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/choose.html">Homepage concepts</a></li></ul></nav>
+      <div><h2>Connect</h2><ul><li><a href="https://www.instagram.com/coffeenutz_dtx" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/956262774241507" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://order.toasttab.com/online/coffee-nutz-nro-1-6951-south-custer-road-ste500" target="_blank" rel="noopener">Order online</a></li></ul></div>
+      <div class="universal-footer__legal"><span>© 2026 Coffee Nutz. All rights reserved.</span><span>Brewed bold. Crafted fresh.</span></div>
+    </footer>
+  </body>
+</html>
