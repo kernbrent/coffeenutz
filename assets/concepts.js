@@ -98,6 +98,12 @@
       ".destination-visit__copy",
       ".destination-visit__image",
       ".destination-gallery img",
+      ".blue-forward-hero__figure",
+      ".blue-forward-hero__copy",
+      ".blue-forward-hero__drink",
+      ".blue-forward-card",
+      ".blue-forward-picks__copy",
+      ".blue-forward-picks__visual",
       ".universal-location__copy",
       ".universal-map"
     ];

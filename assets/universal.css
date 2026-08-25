@@ -53,6 +53,45 @@
   --order-background: #e75e37;
 }
 
+.blue-forward-page {
+  --universal-background: #101010;
+  --universal-accent: #55b8ff;
+  --universal-panel: #078be8;
+  --order-background: #ffe96a;
+  --order-color: #101010;
+}
+
+.proof-banner {
+  position: relative;
+  z-index: 500;
+  display: flex;
+  min-height: 2.3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.35);
+  background: #ffe96a;
+  color: #101010;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.proof-banner strong {
+  padding: 0.22rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: #101010;
+  color: #fff;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+}
+
 .floating-order {
   position: fixed;
   z-index: 300;
@@ -319,6 +358,40 @@
   text-transform: uppercase;
 }
 
+.universal-footer__site-meta {
+  display: inline-flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-left: auto;
+  text-transform: none;
+}
+
+.universal-footer__site-meta > a {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  color: var(--universal-muted);
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
+.universal-footer__site-meta img {
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.82;
+}
+
+.universal-footer__version {
+  padding-left: 0.8rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--universal-muted);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 @media (max-width: 800px) {
   .universal-location {
     grid-template-columns: 1fr;
@@ -345,6 +418,13 @@
 }
 
 @media (max-width: 560px) {
+  .proof-banner {
+    gap: 0.45rem;
+    padding-inline: 0.55rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+  }
+
   .floating-order {
     min-height: 2.85rem;
     padding: 0 0.95rem;
@@ -375,6 +455,11 @@
 
   .universal-footer__legal {
     flex-direction: column;
+  }
+
+  .universal-footer__site-meta {
+    flex-wrap: wrap;
+    margin-left: 0;
   }
 }
 
