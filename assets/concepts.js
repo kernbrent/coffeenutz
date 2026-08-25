@@ -104,6 +104,15 @@
       ".blue-forward-card",
       ".blue-forward-picks__copy",
       ".blue-forward-picks__visual",
+      ".concept-inner-hero__copy",
+      ".concept-inner-hero__visual",
+      ".concept-inner-heading",
+      ".concept-menu-card",
+      ".concept-story__images",
+      ".concept-story__copy",
+      ".concept-values__grid article",
+      ".concept-faq-item",
+      ".concept-inner-cta",
       ".universal-location__copy",
       ".universal-map"
     ];

@@ -1,0 +1,654 @@
+/* Shared secondary-page system for every Coffee Nutz concept. */
+
+.concept-inner-page {
+  --inner-accent: var(--button-background, #078be8);
+  --inner-surface: rgba(255, 255, 255, 0.52);
+  --inner-surface-strong: #fff;
+  --inner-muted: color-mix(in srgb, currentColor 68%, transparent);
+  --inner-line: color-mix(in srgb, currentColor 22%, transparent);
+}
+
+.concept-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.45em;
+}
+
+.concept-nav__order {
+  min-height: 2.65rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
+  border: 1px solid currentColor;
+}
+
+.concept-inner-hero {
+  display: grid;
+  width: min(80rem, 100%);
+  min-height: 34rem;
+  grid-template-columns: minmax(0, 1.04fr) minmax(20rem, 0.96fr);
+  margin-inline: auto;
+}
+
+.concept-inner-hero__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(3.5rem, 7vw, 7rem) clamp(1.4rem, 6vw, 6rem);
+}
+
+.concept-inner-hero h1 {
+  max-width: 13ch;
+  margin: 0;
+  font-size: clamp(3rem, 5.4vw, 5.8rem);
+  letter-spacing: -0.06em;
+  line-height: 0.93;
+}
+
+.concept-inner-hero__copy > p:not(.concept-kicker) {
+  max-width: 39rem;
+  margin: 1.6rem 0;
+  color: var(--inner-muted);
+  font-size: clamp(1.03rem, 1.5vw, 1.22rem);
+  line-height: 1.7;
+}
+
+.concept-inner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.concept-inner-hero__visual {
+  position: relative;
+  min-height: 28rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.concept-inner-hero__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.concept-inner-hero__visual figcaption {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--page-ink);
+  color: var(--page-background);
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.concept-inner-section,
+.concept-faq,
+.concept-values {
+  width: min(80rem, 100%);
+  margin-inline: auto;
+  padding: clamp(4rem, 7vw, 7rem) clamp(1.4rem, 5vw, 5rem);
+  border-top: 1px solid var(--inner-line);
+}
+
+.concept-inner-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.62fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.concept-inner-heading h2,
+.concept-inner-cta h2,
+.concept-story h2 {
+  max-width: 13ch;
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 4.4rem);
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.concept-inner-heading > p,
+.concept-inner-cta p,
+.concept-story__copy > p {
+  color: var(--inner-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.concept-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.concept-menu-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--inner-line);
+  background: var(--inner-surface);
+}
+
+.concept-menu-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.concept-menu-card:hover img {
+  transform: scale(1.035);
+}
+
+.concept-menu-card > div {
+  padding: 1.35rem;
+}
+
+.concept-menu-card p,
+.concept-menu-card h2,
+.concept-menu-card span {
+  display: block;
+  margin: 0;
+}
+
+.concept-menu-card p {
+  margin-bottom: 0.55rem;
+  color: var(--inner-accent);
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.concept-menu-card h2 {
+  font-size: 1.45rem;
+  line-height: 1.1;
+}
+
+.concept-menu-card span {
+  margin-top: 0.7rem;
+  color: var(--inner-muted);
+  line-height: 1.55;
+}
+
+.concept-inner-cta {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: clamp(3rem, 6vw, 6rem);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: var(--page-ink);
+  color: var(--page-background);
+}
+
+.concept-inner-cta > div {
+  max-width: 42rem;
+}
+
+.concept-inner-cta p {
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--page-background) 75%, transparent);
+}
+
+.concept-inner-cta .concept-button {
+  flex: 0 0 auto;
+  border-color: var(--page-background);
+}
+
+.concept-story {
+  display: grid;
+  width: min(80rem, 100%);
+  grid-template-columns: minmax(20rem, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: center;
+  margin-inline: auto;
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.4rem, 5vw, 5rem);
+  border-top: 1px solid var(--inner-line);
+}
+
+.concept-story__images {
+  display: grid;
+  grid-template-columns: 1fr 0.68fr;
+  gap: 1rem;
+  align-items: end;
+}
+
+.concept-story__images img {
+  width: 100%;
+  height: 27rem;
+  object-fit: cover;
+}
+
+.concept-story__images img:last-child {
+  height: 19rem;
+}
+
+.concept-story__copy > p {
+  max-width: 40rem;
+}
+
+.concept-story__copy .concept-button {
+  margin-top: 1rem;
+}
+
+.concept-values__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--inner-line);
+}
+
+.concept-values__grid article {
+  min-width: 0;
+  padding: 2rem clamp(1rem, 3vw, 2.5rem);
+  border-right: 1px solid var(--inner-line);
+}
+
+.concept-values__grid article:first-child {
+  padding-left: 0;
+}
+
+.concept-values__grid article:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.concept-values__grid span {
+  color: var(--inner-accent);
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.concept-values__grid h3 {
+  margin: 1.2rem 0 0.7rem;
+  font-size: 1.55rem;
+}
+
+.concept-values__grid p {
+  color: var(--inner-muted);
+  line-height: 1.65;
+}
+
+.concept-faq-list {
+  border-top: 1px solid var(--inner-line);
+}
+
+.concept-faq-item {
+  border-bottom: 1px solid var(--inner-line);
+}
+
+.concept-faq-item summary {
+  position: relative;
+  padding: 1.5rem 3.5rem 1.5rem 0;
+  cursor: pointer;
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  font-weight: 700;
+  list-style: none;
+}
+
+.concept-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.concept-faq-item summary::after {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  content: "+";
+  color: var(--inner-accent);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  transform: translateY(-50%);
+}
+
+.concept-faq-item[open] summary::after {
+  content: "−";
+}
+
+.concept-faq-item > div {
+  max-width: 50rem;
+  padding: 0 3rem 1.6rem 0;
+  color: var(--inner-muted);
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.concept-faq-item a {
+  color: inherit;
+  font-weight: 700;
+}
+
+/* Pour-Over Theatre */
+.theatre-page.concept-inner-page {
+  --inner-accent: #f0a054;
+  --inner-surface: #211b17;
+  --inner-surface-strong: #e9dfcf;
+  --inner-muted: #c5b8a7;
+  --inner-line: rgba(243, 235, 221, 0.2);
+}
+
+.theatre-page .concept-inner-hero {
+  border-bottom: 1px solid var(--inner-line);
+}
+
+.theatre-page .concept-inner-hero h1,
+.theatre-page .concept-inner-heading h2,
+.theatre-page .concept-inner-cta h2,
+.theatre-page .concept-story h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.theatre-page .concept-inner-hero__visual::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #171310, transparent 30%);
+  content: "";
+  pointer-events: none;
+}
+
+.theatre-page .concept-menu-card,
+.theatre-page .concept-inner-cta {
+  border: 1px solid var(--inner-line);
+}
+
+/* The Family Table */
+.family-page.concept-inner-page {
+  --inner-accent: #c85a1c;
+  --inner-surface: #fff7e9;
+  --inner-muted: #6b4a35;
+  --inner-line: rgba(59, 38, 26, 0.2);
+}
+
+.family-page .concept-inner-hero {
+  width: min(78rem, calc(100% - clamp(1.5rem, 4vw, 4rem)));
+  margin-block: clamp(1rem, 3vw, 2.5rem);
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: #efb14f;
+}
+
+.family-page .concept-inner-hero h1,
+.family-page .concept-inner-heading h2,
+.family-page .concept-inner-cta h2,
+.family-page .concept-story h2,
+.family-page .concept-menu-card h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.family-page .concept-inner-hero__visual img {
+  border-radius: 12rem 0 0;
+}
+
+.family-page .concept-menu-card,
+.family-page .concept-story__images img,
+.family-page .concept-inner-cta {
+  border-radius: 1.2rem;
+}
+
+.family-page .concept-story__images img:first-child {
+  border-radius: 12rem 12rem 1.2rem 1.2rem;
+}
+
+.family-page .concept-story__images img:last-child {
+  border-radius: 8rem 8rem 1.2rem 1.2rem;
+}
+
+/* Specialty Playground */
+.playground-page.concept-inner-page {
+  --inner-accent: #078be8;
+  --inner-surface: #fffdf5;
+  --inner-muted: #414141;
+  --inner-line: #101010;
+}
+
+.playground-page .concept-inner-hero {
+  width: min(80rem, calc(100% - clamp(1rem, 3vw, 3rem)));
+  margin-block: clamp(1rem, 3vw, 2.5rem);
+  border: 3px solid #101010;
+  background: #078be8;
+  box-shadow: 0.65rem 0.65rem 0 #101010;
+}
+
+.playground-page .concept-inner-hero h1,
+.playground-page .concept-inner-heading h2,
+.playground-page .concept-inner-cta h2,
+.playground-page .concept-story h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.playground-page .concept-inner-hero__visual {
+  margin: 1.4rem;
+  border: 3px solid #101010;
+  background: #ffe96a;
+  transform: rotate(1.5deg);
+}
+
+.playground-page .concept-menu-card {
+  border: 3px solid #101010;
+  box-shadow: 0.38rem 0.38rem 0 #101010;
+}
+
+.playground-page .concept-menu-card:nth-child(4n + 1) { background: #ffe96a; }
+.playground-page .concept-menu-card:nth-child(4n + 2) { background: #cbe974; }
+.playground-page .concept-menu-card:nth-child(4n + 3) { background: #ff7657; }
+.playground-page .concept-menu-card:nth-child(4n + 4) { background: #a8dfff; }
+
+.playground-page .concept-story__images img,
+.playground-page .concept-inner-cta,
+.playground-page .concept-faq-list {
+  border: 3px solid #101010;
+  box-shadow: 0.5rem 0.5rem 0 #101010;
+}
+
+.playground-page .concept-faq-item {
+  padding-inline: 1.3rem;
+}
+
+/* The Coffee Journal */
+.journal-page.concept-inner-page {
+  --inner-accent: #742526;
+  --inner-surface: rgba(255, 255, 255, 0.28);
+  --inner-muted: #62534d;
+  --inner-line: rgba(39, 31, 29, 0.3);
+}
+
+.journal-page .concept-inner-hero,
+.journal-page .concept-inner-section,
+.journal-page .concept-story,
+.journal-page .concept-faq,
+.journal-page .concept-values {
+  border-top: 3px double var(--page-ink);
+}
+
+.journal-page .concept-inner-hero h1,
+.journal-page .concept-inner-heading h2,
+.journal-page .concept-inner-cta h2,
+.journal-page .concept-story h2,
+.journal-page .concept-menu-card h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.journal-page .concept-inner-hero__copy {
+  border-right: 1px solid var(--inner-line);
+}
+
+.journal-page .concept-menu-grid {
+  gap: 0;
+  border-top: 1px solid var(--inner-line);
+  border-left: 1px solid var(--inner-line);
+}
+
+.journal-page .concept-menu-card {
+  border-width: 0 1px 1px 0;
+}
+
+.journal-page .concept-menu-card img {
+  filter: saturate(0.82) contrast(1.03);
+}
+
+/* Neighborhood Destination */
+.destination-page.concept-inner-page {
+  --inner-accent: #e75e37;
+  --inner-surface: #fffaf0;
+  --inner-muted: #526078;
+  --inner-line: rgba(24, 38, 64, 0.2);
+}
+
+.destination-page .concept-inner-hero {
+  width: min(80rem, calc(100% - clamp(1rem, 3vw, 3rem)));
+  margin-block: clamp(1rem, 3vw, 2.5rem);
+  overflow: hidden;
+  background: #182640;
+  color: #fff;
+}
+
+.destination-page .concept-inner-hero__copy > p:not(.concept-kicker) {
+  color: #d8deea;
+}
+
+.destination-page .concept-inner-hero__visual figcaption {
+  background: #e75e37;
+  color: #fff;
+}
+
+.destination-page .concept-inner-hero h1,
+.destination-page .concept-inner-heading h2,
+.destination-page .concept-inner-cta h2,
+.destination-page .concept-story h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.destination-page .concept-menu-card,
+.destination-page .concept-inner-cta {
+  box-shadow: 0 1rem 2.5rem rgba(24, 38, 64, 0.1);
+}
+
+/* Blue Man Forward */
+.blue-forward-page.concept-inner-page {
+  --inner-accent: #078be8;
+  --inner-surface: #fffdf8;
+  --inner-muted: #444;
+  --inner-line: #101010;
+}
+
+.blue-forward-page .concept-inner-hero {
+  width: min(76rem, calc(100% - clamp(1rem, 3vw, 3rem)));
+  margin-block: clamp(1rem, 3vw, 2.5rem);
+  overflow: hidden;
+  border: 2px solid #101010;
+  border-top: 0.45rem solid #078be8;
+  background: #fffdf8;
+}
+
+.blue-forward-page .concept-inner-hero h1,
+.blue-forward-page .concept-inner-heading h2,
+.blue-forward-page .concept-inner-cta h2,
+.blue-forward-page .concept-story h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+}
+
+.blue-forward-page .concept-inner-hero__visual {
+  border-left: 2px solid #101010;
+}
+
+.blue-forward-page .concept-menu-card {
+  border: 2px solid #101010;
+}
+
+.blue-forward-page .concept-menu-card:nth-child(4n + 1) > div { border-top: 0.5rem solid #078be8; }
+.blue-forward-page .concept-menu-card:nth-child(4n + 2) > div { border-top: 0.5rem solid #d7ed74; }
+.blue-forward-page .concept-menu-card:nth-child(4n + 3) > div { border-top: 0.5rem solid #ff683f; }
+.blue-forward-page .concept-menu-card:nth-child(4n + 4) > div { border-top: 0.5rem solid #ffe96a; }
+
+.blue-forward-page .concept-story__images img,
+.blue-forward-page .concept-inner-cta {
+  border: 2px solid #101010;
+}
+
+@media (max-width: 900px) {
+  .concept-inner-hero,
+  .concept-story,
+  .concept-inner-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-inner-hero__visual {
+    min-height: 24rem;
+  }
+
+  .concept-menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .concept-story__images {
+    width: min(38rem, 100%);
+  }
+
+  .playground-page .concept-inner-hero__visual,
+  .blue-forward-page .concept-inner-hero__visual,
+  .journal-page .concept-inner-hero__copy {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .concept-inner-hero h1 {
+    font-size: clamp(2.65rem, 13vw, 4.2rem);
+  }
+
+  .concept-menu-grid,
+  .concept-values__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-values__grid article,
+  .concept-values__grid article:first-child,
+  .concept-values__grid article:last-child {
+    padding: 1.5rem 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--inner-line);
+  }
+
+  .concept-inner-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .concept-story__images img {
+    height: 20rem;
+  }
+
+  .concept-story__images img:last-child {
+    height: 14rem;
+  }
+
+  .family-page .concept-inner-hero,
+  .playground-page .concept-inner-hero,
+  .destination-page .concept-inner-hero,
+  .blue-forward-page .concept-inner-hero {
+    width: calc(100% - 1.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .concept-menu-card img {
+    transition: none;
+  }
+}

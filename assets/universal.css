@@ -216,10 +216,29 @@
 
 .universal-location__address {
   max-width: 27rem;
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.65rem;
   color: var(--universal-muted);
   font-size: 1rem;
   line-height: 1.65;
+}
+
+.universal-location__note {
+  max-width: 30rem;
+  margin: 0 0 0.7rem;
+  color: var(--universal-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.universal-location__phone {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  color: var(--universal-color);
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-underline-offset: 0.25em;
 }
 
 .universal-location__link {

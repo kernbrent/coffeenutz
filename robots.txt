@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coffee.careersteps.net/sitemap.xml
+Sitemap: https://coffee-nutz.com/sitemap.xml
